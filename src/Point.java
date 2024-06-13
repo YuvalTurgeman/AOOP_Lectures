@@ -32,4 +32,9 @@ public class Point {
         y += dy;
     }
 
+    public boolean equals(Object other){
+        if(other instanceof Point)
+            return x == ((Point) other).x && y == ((Point)other).y;
+        return false;
+    }
 }

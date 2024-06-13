@@ -58,4 +58,9 @@ public class Circle {
         return 2*radius*Math.PI;
     }
 
+    public boolean equals(Object other){
+        if(other instanceof Circle)
+            return center.equals(((Circle) other).center) && radius == ((Circle)other).radius;
+        return false;
+    }
 }
